@@ -1,3 +1,24 @@
+2010-01-13  Jim Grosbach <grosbach@apple.com>
+
+        Radar 7511696
+	* flow.c (flow_lite): Don't change allocation availailability of PIC
+	base register when not doing flow analysis. Add early exit.
+	* local-alloc.c (local_alloc): Debug dump even when no PIC base flow
+	analysis was performed.
+	(dump_inheritance): Add function name to pic_rtx_inheritance debug
+	dump line.
+
+2010-01-07  Jim Grosbach <grosbach@apple.com>
+
+        Radar 7519550
+	* doc/invoke.texi: Document -force_load
+
+2010-01-07  Jim Grosbach <grosbach@apple.com>
+
+        Radar 7519550
+	* config/darwin.h (TARGET_OPTION_TRANSLATE_TABLE,
+	WORD_SWITCH_TAKES_ARG, LINK_SPEC): Add -force_load.
+
 2009-12-04  Jim Grosbach <grosbach@apple.com>
 
 	Radar 6930582
